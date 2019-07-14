@@ -1,0 +1,117 @@
+-- Converted using HW2 Map Converter v0.9.0 by Mikail
+
+Description =
+{
+	"DOES NOT WORK YET !!!!!!!!!!!!",
+	"",
+	"This is the very first Custom map for Homeworld Cataclysm",
+	"",
+	"This map makes for a very intense fight for the ru's, good for ffa or team play.",
+	"",
+	"AUTHOR: Gen_DP_medamanx",
+	"WEBSITE: www.strategyplanet.com/hwshots		",
+}
+
+LevelName = [[Staples (4)]]
+NumberOfPlayers = 4
+
+SensorsZoom = {50000, 300000,}
+UniverseSize = {100000, 100000, 45000, }
+
+LevelBackground = "mission07"
+LevelMusic = "15"
+
+RUsRatio = 1
+
+PebRatio = 4/5
+
+StartPoints =
+{
+	{-80000.0, 30000.0, -30000.0, 0.0,},
+	{-80000.0, -30000.0, 30000.0, 0.0,},
+	{80000.0, 30000.0, 30000.0, -180.0,},
+	{80000.0, -30000.0, -30000.0, -180.0,},
+}
+
+StartShips =
+{
+	{1, "", "smothership", {-80000.0, 30000.0, -30000.0,}, 0, {0, 0, 0.0,}, 0, 0, "race_sect", "null_formation",},
+	{1, "", "sprocessor", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+	{2, "", "sworker", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+	{1, "", "smothership", {-80000.0, -30000.0, 30000.0,}, 1, {0, 0, 0.0,}, 0, 0, "race_sect", "null_formation",},
+	{2, "", "sworker", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+	{1, "", "sprocessor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+	{1, "", "smothership", {80000.0, 30000.0, 30000.0,}, 2, {0, 0, -180.0,}, 0, 0, "race_sect", "null_formation",},
+	{2, "", "sworker", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+	{1, "", "sprocessor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+	{1, "", "smothership", {80000.0, -30000.0, -30000.0,}, 3, {0, 0, -180.0,}, 0, 0, "race_sect", "null_formation",},
+	{2, "", "sworker", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+	{1, "", "sprocessor", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "race_sect", "broad_formation",},
+}
+
+Squadrons =
+{
+}
+
+Derelicts =
+{
+}
+
+Crystals =
+{
+	{1, "dcrystal1", {0.0, -30000.0, 30000.0,},},
+	{1, "dcrystal0", {0.0, -30000.0, 30400.0,},},
+	{1, "dcrystal1", {0.0, 30000.0, 30000.0,},},
+	{1, "dcrystal1", {0.0, -30000.0, -30000.0,},},
+	{1, "dcrystal1", {0.0, 30000.0, -30000.0,},},
+	{1, "dcrystal0", {0.0, -30000.0, -30400.0,},},
+	{1, "dcrystal0", {0.0, 30000.0, 30400.0,},},
+	{1, "dcrystal0", {0.0, 30000.0, -30400.0,},},
+	{1, "dcrystal1", {0.0, 0.0, 0.0,},},
+	{1, "dcrystal0", {0.0, 0.0, 400.0,},},
+	{1, "dcrystal0", {0.0, 0.0, -400.0,},},
+}
+
+Distributions =
+{
+	dust =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 0,
+		dustcloud2 = 2,
+		dustcloud3 = 2,
+		dustcloud4 = 0,
+		dustcloud5 = 2,
+		dustcloud6 = 0,
+		dustcloud7 = 4,
+	},
+	aster =
+	{
+		asteroid0 = 5,
+		asteroid1 = 0,
+		asteroid2 = 0,
+		asteroid3 = 2,
+		asteroid4 = 3,
+	},
+}
+
+Resources =
+{
+	{{-15000.0, 0.0, 0.0,}, "cylinder", "dust", 30, 5000.0, 80000.0, 45.0, -90.0,},
+	{{35000.0, 30000.0, 30000.0,}, "cylinder", "dust", 30, 5000.0, 100000.0, 0.0, 0.0,},
+	{{15000.0, 0.0, 0.0,}, "cylinder", "dust", 30, 5000.0, 80000.0, -45.0, -90.0,},
+	{{35000.0, -30000.0, -30000.0,}, "cylinder", "dust", 30, 5000.0, 100000.0, 0.0, 0.0,},
+	{{-35000.0, 30000.0, -30000.0,}, "cylinder", "dust", 30, 5000.0, 100000.0, 0.0, 0.0,},
+	{{-35000.0, -30000.0, 30000.0,}, "cylinder", "dust", 30, 5000.0, 100000.0, 0.0, 0.0,},
+	{{-35000.0, -30000.0, 30000.0,}, "cylinder", "aster", 120, 5000.0, 100000.0, 0.0, 0.0,},
+	{{-35000.0, 30000.0, -30000.0,}, "cylinder", "aster", 120, 5000.0, 100000.0, 0.0, 0.0,},
+	{{35000.0, -30000.0, -30000.0,}, "cylinder", "aster", 120, 5000.0, 100000.0, 0.0, 0.0,},
+	{{35000.0, 30000.0, 30000.0,}, "cylinder", "aster", 120, 5000.0, 100000.0, 0.0, 0.0,},
+	{{-15000.0, 0.0, 0.0,}, "cylinder", "aster", 100, 5000.0, 80000.0, 45.0, -90.0,},
+	{{15000.0, 0.0, 0.0,}, "cylinder", "aster", 100, 5000.0, 80000.0, -45.0, -90.0,},
+}
+
+--------------------------------------------------------------------------------
+
+dofilepath("data:scripts/levelfunc.lua")
+

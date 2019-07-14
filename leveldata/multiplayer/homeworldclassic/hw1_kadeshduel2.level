@@ -1,0 +1,89 @@
+-- Converted using HW2 Map Converter v0.9.0 by Mikail
+
+Description =
+{
+	"A large nebula in which all players start with Kadesh ships.",
+	"",
+	"- Settings: medium resources, starting force includes 2 Collectors, 1 Controler, 50 Swarmeres, 25 Advanced Swarmers, 4 Fuel Pods, 4 Multi-Beam Frigates, and a Kadesh Needle Mothership.",
+	"- Author: Vicker&2&0&0&0",
+	"- E-mail: Vicker3000@hotmail.com",
+}
+
+LevelName = [[Kadesh Duel (2)]]
+NumberOfPlayers = 2
+
+SensorsZoom = {50000, 160000,}
+UniverseSize = {120000, 120000, 60000, }
+
+LevelBackground = "ez10"
+LevelMusic = "14"
+
+RUsRatio = 1/4
+
+PebRatio = 3/4
+
+StartPoints =
+{
+	{-70000.0, 0.0, 0.0, 0.0,},
+	{70000.0, 0.0, 0.0, -180.0,},
+}
+
+StartShips =
+{
+	{1, "", "p2mothership", {-70000.0, 0.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "p2", "null_formation",},
+	{3, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{25, "", "p2advanceswarmer", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+	{50, "", "p2swarmer", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+	{4, "", "p2multibeamfrigate", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+	{4, "", "p2fuelpod", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+	{1, "", "p2mothership", {70000.0, 0.0, 0.0,}, 1, {0, 0, -180.0,}, 0, 0, "p2", "null_formation",},
+	{3, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{25, "", "p2advanceswarmer", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+	{50, "", "p2swarmer", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+	{4, "", "p2multibeamfrigate", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+	{4, "", "p2fuelpod", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "p2", "parade_formation",},
+}
+
+Squadrons =
+{
+}
+
+Derelicts =
+{
+}
+
+Crystals =
+{
+}
+
+Distributions =
+{
+	nebula =
+	{
+		nebula0 = 5,
+		nebula1 = 0,
+		nebula2 = 0,
+		nebula3 = 0,
+	},
+}
+
+Resources =
+{
+	{{0.0, 0.0, 0.0,}, "nebula", "nebula", 150, 30000.0, 30000.0, 30000.0, 10000,},
+	{{-60000.0, 0.0, 0.0,}, "nebula", "nebula", 150, 20000.0, 20000.0, 20000.0, 10000,},
+	{{60000.0, 0.0, 0.0,}, "nebula", "nebula", 150, 20000.0, 20000.0, 20000.0, 10000,},
+	{{0.0, 0.0, 40000.0,}, "nebula", "nebula", 150, 10000.0, 100000.0, 10000.0, 10000,},
+	{{0.0, 0.0, -40000.0,}, "nebula", "nebula", 150, 10000.0, 100000.0, 10000.0, 10000,},
+	{{-50000.0, -40000.0, 30000.0,}, "nebula", "nebula", 150, 10000.0, 10000.0, 10000.0, 10000,},
+	{{50000.0, 40000.0, -30000.0,}, "nebula", "nebula", 150, 10000.0, 10000.0, 10000.0, 10000,},
+	{{0.0, 0.0, 0.0,}, "nebula", "nebula", 150, 200000.0, 200000.0, 200000.0, 10000,},
+}
+
+--------------------------------------------------------------------------------
+
+dofilepath("data:scripts/levelfunc.lua")
+

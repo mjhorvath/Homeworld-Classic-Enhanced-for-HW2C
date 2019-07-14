@@ -1,0 +1,138 @@
+-- Converted using HW2 Map Converter v0.9.0 by Mikail
+
+Description =
+{
+	"BirthPlace (2-8)",
+	"This nebula is gradually collapsing into a star.  If you can harness the energy and resources concentrated here you can easily smash your opponents.",
+	"",
+	"SETTINGS : Default",
+	"AUTHOR	 : Jason Attard (BPLlama@canada.com)",
+	"VERSION	 : 2.0 (October 17,1999)",
+}
+
+LevelName = [[Stellar Birthplace (2-8)]]
+NumberOfPlayers = 6
+
+SensorsZoom = {50000, 120000,}
+UniverseSize = {200000, 200000, 190000, }
+
+LevelBackground = "ez07"
+LevelMusic = "8"
+
+RUsRatio = 1/2
+
+PebRatio = 4/5
+
+StartPoints =
+{
+	{-50000.0, 50000.0, 50000.0, -45.0,},
+	{50000.0, -50000.0, -50000.0, 135.0,},
+	{50000.0, 50000.0, 50000.0, -135.0,},
+	{-50000.0, -50000.0, -50000.0, 45.0,},
+	{-50000.0, 50000.0, -50000.0, -45.0,},
+	{50000.0, -50000.0, 50000.0, 135.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {-50000.0, 50000.0, 50000.0,}, 0, {0, 0, -45.0,}, 0, 0, "r1", "null_formation",},
+	{1, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{1, "", "mothership", {50000.0, -50000.0, -50000.0,}, 1, {0, 0, 135.0,}, 0, 0, "r2", "null_formation",},
+	{1, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{1, "", "mothership", {50000.0, 50000.0, 50000.0,}, 2, {0, 0, -135.0,}, 0, 0, "r1", "null_formation",},
+	{1, "", "researchship", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{1, "", "mothership", {-50000.0, -50000.0, -50000.0,}, 3, {0, 0, 45.0,}, 0, 0, "r2", "null_formation",},
+	{1, "", "researchship", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{1, "", "mothership", {-50000.0, 50000.0, -50000.0,}, 4, {0, 0, -45.0,}, 0, 0, "r1", "null_formation",},
+	{1, "", "researchship", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1", "parade_formation",},
+	{1, "", "mothership", {50000.0, -50000.0, 50000.0,}, 5, {0, 0, 135.0,}, 0, 0, "r2", "null_formation",},
+	{1, "", "researchship", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r2", "parade_formation",},
+}
+
+Squadrons =
+{
+}
+
+Derelicts =
+{
+}
+
+Crystals =
+{
+}
+
+Distributions =
+{
+	nebula =
+	{
+		nebula0 = 0,
+		nebula1 = 5,
+		nebula2 = 3,
+		nebula3 = 2,
+		nebula4 = 10,
+	},
+	bigdustcloud =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 2,
+		dustcloud2 = 3,
+		dustcloud3 = 4,
+	},
+}
+
+Resources =
+{
+	{{0.0, 0.0, 0.0,}, "nebula", "nebula", 128, 40000.0, 40000.0, 40000.0, 12800,},
+	{{0.0, 0.0, 0.0,}, "nebula", "nebula", 256, 80000.0, 80000.0, 80000.0, 25600,},
+	{{0.0, 0.0, 0.0,}, "sphere", "bigdustcloud", 60, 10000.0, 20000.0, 0.0, 0.0,},
+	{{0.0, 0.0, 0.0,}, "sphere", "bigdustcloud", 120, 20000.0, 40000.0, 0.0, 0.0,},
+	{{40000.0, 0.0, 0.0,}, "cylinder", "bigdustcloud", 30, 4000.0, 60000.0, 0.0, 0.0,},
+	{{-40000.0, 0.0, 0.0,}, "cylinder", "bigdustcloud", 30, 4000.0, 60000.0, 0.0, 0.0,},
+	{{0.0, 40000.0, 0.0,}, "cylinder", "bigdustcloud", 30, 4000.0, 60000.0, 0.0, 90.0,},
+	{{0.0, -40000.0, 0.0,}, "cylinder", "bigdustcloud", 30, 4000.0, 60000.0, 0.0, 90.0,},
+	{{0.0, 0.0, 40000.0,}, "cylinder", "bigdustcloud", 30, 4000.0, 60000.0, 90.0, 0.0,},
+	{{0.0, 0.0, -40000.0,}, "cylinder", "bigdustcloud", 30, 4000.0, 60000.0, 90.0, 0.0,},
+	{{50000.0, 50000.0, 0.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{50000.0, -50000.0, 0.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{-50000.0, 50000.0, 0.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{-50000.0, -50000.0, 0.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{0.0, 50000.0, 50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{0.0, 50000.0, -50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{0.0, -50000.0, 50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{0.0, -50000.0, -50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{50000.0, 0.0, 50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{50000.0, 0.0, -50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{-50000.0, 0.0, 50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{-50000.0, 0.0, -50000.0,}, "sphere", "bigdustcloud", 24, 10000.0, 20000.0, 0.0, 0.0,},
+	{{60000.0, 60000.0, 60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+	{{60000.0, 60000.0, -60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+	{{60000.0, -60000.0, 60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+	{{60000.0, -60000.0, -60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+	{{-60000.0, 60000.0, 60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+	{{-60000.0, 60000.0, -60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+	{{-60000.0, -60000.0, 60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+	{{-60000.0, -60000.0, -60000.0,}, "nebula", "nebula", 16, 10000.0, 10000.0, 10000.0, 960,},
+}
+
+--------------------------------------------------------------------------------
+
+dofilepath("data:scripts/levelfunc.lua")
+
