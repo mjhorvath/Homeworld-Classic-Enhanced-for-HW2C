@@ -55,7 +55,7 @@ dofilepath([[data:leveldata/multiplayer/lib/writestats.lua]])
 dofilepath([[data:leveldata/multiplayer/lib/music.lua]])
 dofilepath([[data:leveldata/multiplayer/lib/ATIdisplay.lua]])
 
-GameRulesName = "HWC Enhanced 1.2.6"
+GameRulesName = "HWC Enhanced 1.3.0"
 Description = "Additional multiplayer options from the Homeworld Classic and Gameplay Enhanced mods."
 
 Directories =

@@ -10,7 +10,7 @@
 // Steam Workshop.  The description text is limited to 8,000 characters total in length.
 
 // title of the MOD that appears on the Steam Workshop (limited to 128 characters)
-Title: [HW2C] Homeworld Classic Enhanced 1.2.6
+Title: [HW2C] Homeworld Classic Enhanced 1.2.7
 
 // tags must be individual words separated by spaces.
 Tags: HW2Classic bounties crates

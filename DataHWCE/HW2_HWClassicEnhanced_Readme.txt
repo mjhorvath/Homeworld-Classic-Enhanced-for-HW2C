@@ -1,8 +1,8 @@
-Title:		Homeworld Classic Enhanced
-Version:	1.2.6
+Title:		Homeworld Classic Enhanced for Homeworld 2 Classic
+Version:	1.2.7
 Authors:	Mikali, Luke Moloney (original version)
 Created:	2011/11/18
-Updated:	2016/05/02
+Updated:	2020/07/15
 Homepage:	http://isometricland.net/homeworld/homeworld.php
 Workshop:	http://steamcommunity.com/sharedfiles/filedetails/?id=401858560
 ModDB:		http://www.moddb.com/mods/homeworld-classic-enhanced
@@ -195,6 +195,9 @@ TO DO
 
 
 CHANGE LOG
+
+1.2.7
+• Moved the mod files into a subfolder of the GIT repository.
 
 1.2.6
 • Absence of "keeper.txt" may have been preventing the mod from running.
