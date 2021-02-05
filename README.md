@@ -2,8 +2,8 @@
 
 This mod has two readmes:
 
-* [HW2_HWClassicEnhanced_Readme.txt](HW2_HWClassicEnhanced_Readme.txt)
-* [HW2_HWClassicMaps_Readme.txt](HW2_HWClassicMaps_Readme.txt)
+* [HW2_HWClassicEnhanced_Readme.txt](DataHWCE/HW2_HWClassicEnhanced_Readme.txt)
+* [HW2_HWClassicMaps_Readme.txt](DataHWCE/HW2_HWClassicMaps_Readme.txt)
 
 The newer version of this mod for Homeworld Remastered is located here:
 
