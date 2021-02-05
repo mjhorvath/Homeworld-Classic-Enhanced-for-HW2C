@@ -1,0 +1,84 @@
+-- Converted using HW2 Map Converter v0.85 by Mikail
+-- ............Bentusi distress Becon.............
+-- LOCATION: X=500 Y=-30400 Z=46000 
+-- Clasificatioin: Cargo class Date:Sat June30,2001 8:49:08AM FRQ:12PSI Taiidan Hunting pack reported 12months ago.
+-- HATACHI  HARVESTING Corp. Will be helping us to recive the betusi Weapons cargo and supplys for the population of Higara.
+-- AUTHOR	 : Scott Payne (cubic.loop@verizon.net)
+-- VERSION	 : 1.0 (June 30 2000)
+
+LevelName = [[Empires Wrath4]]
+NumberOfPlayers = 4
+
+SensorsZoom = {50000, 100000,}
+UniverseSize = {100000, 100000, 50000, }
+
+LevelBackground = ""
+LevelMusic = "27"
+
+StartPoints =
+{
+	{67698.0, -30000.0, 0.0, 180.0,},
+	{-64319.0, -30000.0, 0.0, 0.0,},
+	{67698.0, 30000.0, 0.0, 180.0,},
+	{-64319.0, 30000.0, 0.0, 0.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {67698.0, -30000.0, 0.0,}, 0, {0, 0, 180.0,}, 0, 0, "r1",},
+	{3, "", "resourcecontroller", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{6, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "repaircorvette", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{2, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-64319.0, -30000.0, 0.0,}, 1, {0, 0, 0.0,}, 0, 0, "r2",},
+	{3, "", "resourcecontroller", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{6, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "repaircorvette", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{2, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "mothership", {67698.0, 30000.0, 0.0,}, 2, {0, 0, 180.0,}, 0, 0, "r1",},
+	{3, "", "resourcecontroller", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{6, "", "resourcecollector", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "repaircorvette", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{2, "", "researchship", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-64319.0, 30000.0, 0.0,}, 3, {0, 0, 0.0,}, 0, 0, "r2",},
+	{3, "", "resourcecontroller", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2",},
+	{6, "", "resourcecollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "repaircorvette", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2",},
+	{2, "", "researchship", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r2",},
+}
+
+Squadrons =
+{
+	{1, "", "crate", {-500.0, -49554.0, -30700.0,}, -1, {0, 0.0, 0.0,}, 0, 0, "derelicts"},
+	{1, "", "crate", {-500.0, -48900.0, -30700.0,}, -1, {0, 0.0, 0.0,}, 0, 0, "derelicts"},
+	{1, "", "cargobarge", {-500.0, -46000.0, -30400.0,}, -1, {0, 0, 90.0,}, 0, 0, "traders"},
+}
+Crystals = {}
+
+Distributions =
+{
+	dustcloud =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 1,
+		dustcloud2 = 5,
+		dustcloud3 = 0,
+	},
+}
+
+Resources =
+{
+	{{0.0, -46000.0, -30400.0,}, "sphere", "dustcloud", 300, 10000.0, 10000.0, 0.0, 0.0,},
+	{{-45000.0, 0.0, 30400.0,}, "sphere", "dustcloud", 300, 10000.0, 10000.0, 0.0, 0.0,},
+	{{45000.0, 0.0, 30400.0,}, "sphere", "dustcloud", 300, 10000.0, 10000.0, 0.0, 0.0,},
+	{{0.0, 46000.0, -30400.0,}, "sphere", "dustcloud", 300, 10000.0, 10000.0, 0.0, 0.0,},
+}
+
+RUsRatio = 1/4
+
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

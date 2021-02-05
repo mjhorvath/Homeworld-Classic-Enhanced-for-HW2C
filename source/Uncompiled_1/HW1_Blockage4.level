@@ -1,0 +1,68 @@
+-- Converted using HW2 Map Converter v0.85 by Mikail
+-- Blockage
+-- This is a fun map for FFA. This map also will make for an interesting 2v2 game.
+-- AUTHOR	 : medamanx
+
+LevelName = [[Blockage (2-4)]]
+NumberOfPlayers = 4
+
+SensorsZoom = {50000, 100000,}
+UniverseSize = {100000, 100000, 50000, }
+
+LevelBackground = "darknebula_btg"
+LevelMusic = "6"
+
+StartPoints =
+{
+	{-50000.0, 50000.0, 0.0, 0.0,},
+	{50000.0, -50000.0, 0.0, 180.0,},
+	{50000.0, 50000.0, 0.0, 0.0,},
+	{-50000.0, -50000.0, 0.0, 0.0,},
+}
+
+StartShips =
+{
+	{1, "", "carrier", {50000.0, -50000.0, 0.0,}, 1, {0, 0, 180.0,}, 0, 0, "r1",},
+	{1, "", "carrier", {-50000.0, 50000.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "carrier", {-50000.0, -50000.0, 0.0,}, 3, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "carrier", {50000.0, 50000.0, 0.0,}, 2, {0, 0, 0.0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+}
+Crystals = {}
+
+Distributions =
+{
+	dust =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 2,
+		dustcloud2 = 3,
+		dustcloud3 = 4,
+	},
+	aster =
+	{
+		asteroid0 = 0,
+		asteroid1 = 2,
+		asteroid2 = 3,
+		asteroid3 = 20,
+		asteroid4 = 25,
+	},
+}
+
+Resources =
+{
+	{{25000.0, 0.0, 0.0,}, "cylinder", "dust", 50, 5000.0, 30000.0, 0.0, 0.0},
+	{{50000.0, 0.0, 0.0,}, "cylinder", "dust", 100, 5000.0, 125000.0, 0.0, -90.0},
+	{{-25000.0, 0.0, 0.0,}, "cylinder", "dust", 50, 5000.0, 30000.0, 0.0, 0.0},
+	{{-50000.0, 0.0, 0.0,}, "cylinder", "dust", 100, 5000.0, 125000.0, 0.0, -90.0},
+	{{0.0, 0.0, 0.0,}, "sphere", "aster", 50, 5000.0, 0.0, 0.0, 0.0},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

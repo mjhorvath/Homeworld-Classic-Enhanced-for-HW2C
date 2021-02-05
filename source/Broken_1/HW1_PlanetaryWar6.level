@@ -1,0 +1,155 @@
+-- Converted using HW2 Map Converter v0.81 by Mikail
+-- Planetary War
+-- Fleet engagement for 2-6 players.  Capital ships and fighters only, some extra fighters may be constructed.
+-- SETTINGS: Harvesting and research off, bounties and injections off.
+-- AUTHOR	: Hellhawk666
+-- VERSION	: 1.0 (28 December 1999)
+
+LevelName = [[Planetary War (2-6)]]
+NumberOfPlayers = 6
+
+SensorsZoom = {50000, 200000,}
+UniverseSize = {200000, 200000, 200000, }
+
+LevelBackground = "default"
+LevelMusic = "11"
+
+StartPoints =
+{
+}
+
+StartShips =
+{
+	{1, "", "Carrier", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "HeavyCruiser", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{2, "", "StandardDestroyer", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "MissileDestroyer", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "HeavyCruiser", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{2, "", "StandardDestroyer", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "MissileDestroyer", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "HeavyCruiser", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{2, "", "StandardDestroyer", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "MissileDestroyer", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "HeavyCruiser", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{2, "", "StandardDestroyer", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "MissileDestroyer", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "HeavyCruiser", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{2, "", "StandardDestroyer", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "MissileDestroyer", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyDefender", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "HeavyCruiser", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{2, "", "StandardDestroyer", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "MissileDestroyer", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightInterceptor", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "HeavyInterceptor", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "LightDefender", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+	{12, "", "AttackBomber", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "R1",},
+}
+
+Squadrons =
+{
+	{1, "", "PlanetOfOrigin", {0.0, -500000.0, 0.0,}, -1, {0, -20.0, 90.0,}, 0, 0, "Derelicts"},
+	{1, "", "AngelMoon", {-500000.0, 290000.0, 0.0,}, -1, {0, 0.0, -30.0,}, 0, 0, "Derelicts"},
+	{1, "", "AngelMoon_clean", {500000.0, 290000.0, 0.0,}, -1, {0, 0.0, -150.0,}, 0, 0, "Derelicts"},
+}
+
+Distributions =
+{
+	asteroids =
+	{
+		Asteroid0 = 1,
+		Asteroid1 = 1,
+		Asteroid2 = 1,
+		Asteroid3 = 2,
+		Asteroid4 = 3,
+	},
+}
+
+Resources =
+{
+	{{0.0, 0.0, 0.0,}, "Sphere", "asteroids", 500, 250000, 0.0, 0.0, 0.0},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Tweaking Variables
+
+RUMulti = 4
+PebMulti = 1
+RUScale = 2 * 700 / 575
+MapScale = 161 / 325
+UniverseScale = 1.2
+MinSensorsZoomOverride = 12000
+MaxSensorsZoomOverride = -1
+AdvancedGameRule = 1
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:MapInclude.lua")
+

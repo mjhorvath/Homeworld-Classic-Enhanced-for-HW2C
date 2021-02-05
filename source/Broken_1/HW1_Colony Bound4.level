@@ -1,0 +1,106 @@
+-- Converted using HW2 Map Converter v0.81 by Mikail
+-- Colony Bound 2 - 4 
+-- The esablishment of colonies is your only key to survival.  Harvest what you can and crush your foes. 
+-- Settings: You'll find out.
+-- AUTHOR	: Alan Chavira
+-- E-mail  : XxCHScrazyGUYxx@aol.com 
+
+LevelName = [[Colony Bound(2-4)]]
+NumberOfPlayers = 4
+
+SensorsZoom = {30000, 300000,}
+UniverseSize = {290000, 290000, 290000, }
+
+LevelBackground = "default"
+LevelMusic = "16"
+
+StartPoints =
+{
+	{-115000.0, 0.0, 0.0, 0.0,},
+	{115000.0, 0.0, 0.0, 180.0,},
+	{0.0, 115000.0, 0.0, -90.0,},
+	{0.0, -115000.0, 0.0, 90.0,},
+}
+
+StartShips =
+{
+	{1, "", "Mothership", {115000.0, 0.0, 0.0,}, 1, {0, 0, 180.0,}, 0, 0, "R1",},
+	{4, "", "ResearchShip", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{2, "", "ResourceCollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{5, "", "MultiGunCorvette", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{5, "", "MinelayerCorvette", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Carrier", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "R1",},
+	{1, "", "Mothership", {-115000.0, 0.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "R2",},
+	{4, "", "ResearchShip", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R2",},
+	{2, "", "ResourceCollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R2",},
+	{5, "", "MultiGunCorvette", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R2",},
+	{5, "", "MinelayerCorvette", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R2",},
+	{1, "", "Carrier", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "R2",},
+	{1, "", "Mothership", {0.0, 115000.0, 0.0,}, 2, {0, 0, -90.0,}, 0, 0, "R2",},
+	{4, "", "ResearchShip", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R2",},
+	{2, "", "ResourceCollector", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R2",},
+	{5, "", "MultiGunCorvette", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R2",},
+	{5, "", "MinelayerCorvette", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R2",},
+	{1, "", "Carrier", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "R2",},
+	{1, "", "Mothership", {0.0, -115000.0, 0.0,}, 3, {0, 0, 90.0,}, 0, 0, "R2",},
+	{4, "", "ResearchShip", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R2",},
+	{2, "", "ResourceCollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R2",},
+	{5, "", "MultiGunCorvette", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R2",},
+	{5, "", "MinelayerCorvette", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R2",},
+	{1, "", "Carrier", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "R2",},
+}
+
+Squadrons =
+{
+}
+
+Distributions =
+{
+	Asteroid =
+	{
+		Asteroid0 = 1,
+		Asteroid1 = 5,
+		Asteroid2 = 3,
+		Asteroid3 = 4,
+		Asteroid4 = 3,
+	},
+	Dust =
+	{
+		DustCloud0 = 0,
+		DustCloud1 = 3,
+		DustCloud2 = 2,
+		DustCloud3 = 2,
+		DustCloud4 = 4,
+	},
+}
+
+Resources =
+{
+	{{-150000.0, 150000.0, 0.0,}, "Sphere", "Asteroid", 100, 15000.0, 15000.0, 0.0, 0.0},
+	{{-150000.0, 150000.0, 0.0,}, "Sphere", "Dust", 150, 10000.0, 10000.0, 0.0, 0.0},
+	{{-150000.0, -150000.0, 0.0,}, "Sphere", "Asteroid", 100, 15000.0, 15000.0, 0.0, 0.0},
+	{{-150000.0, -150000.0, 0.0,}, "Sphere", "Dust", 150, 10000.0, 10000.0, 0.0, 0.0},
+	{{150000.0, -150000.0, 0.0,}, "Sphere", "Asteroid", 100, 15000.0, 15000.0, 0.0, 0.0},
+	{{150000.0, -150000.0, 0.0,}, "Sphere", "Dust", 150, 10000.0, 10000.0, 0.0, 0.0},
+	{{150000.0, 150000.0, 0.0,}, "Sphere", "Asteroid", 100, 15000.0, 15000.0, 0.0, 0.0},
+	{{150000.0, 150000.0, 0.0,}, "Sphere", "Dust", 150, 10000.0, 10000.0, 0.0, 0.0},
+	{{0.0, 0.0, 0.0,}, "Sphere", "Asteroid", 150, 30000.0, 30000.0, 0.0, 0.0},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Tweaking Variables
+
+RUMulti = 4
+PebMulti = 1
+RUScale = 2 * 700 / 575
+MapScale = 161 / 325
+UniverseScale = 1.2
+MinSensorsZoomOverride = 12000
+MaxSensorsZoomOverride = -1
+AdvancedGameRule = 1
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:MapInclude.lua")
+

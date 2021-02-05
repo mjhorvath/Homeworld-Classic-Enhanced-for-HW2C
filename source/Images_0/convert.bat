@@ -1,0 +1,9 @@
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 6p_talascrossroads_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 4p_lostfalls_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 4p_subjugateyourfriends_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 5p_radial_symmetry_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 5p_treeoflife_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 6p_fieldsofplaz_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 6p_hyperspacearena_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 6p_scattered_thumb.tga -overwrite -flip
+D:\Working\Homeworld\ddsconverter\nvdxt.exe -file 4p_ironcurtain_thumb.tga -overwrite -flip

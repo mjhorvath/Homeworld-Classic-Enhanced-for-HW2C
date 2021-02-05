@@ -1,0 +1,69 @@
+-- Converted using HW2 Map Converter v0.85 by Mikail
+-- Nebula
+-- This map is quite unusually unique. Ya gota to be good to survive.
+-- Hope you enjoy.
+-- AUTHOR	 : medamanx
+-- E-MAIL	 : medamanx@hotmail.com  (fer any comments er questions ya got bout the map)
+
+LevelName = [[Nebula... (1v1)]]
+NumberOfPlayers = 2
+
+SensorsZoom = {50000, 100000,}
+UniverseSize = {100000, 100000, 100000, }
+
+LevelBackground = "greenneb"
+LevelMusic = "20"
+
+RUsRatio = 1/2
+
+StartPoints =
+{
+	{-100000.0, -10000.0, 0.0, 0.0,},
+	{100000.0, 10000.0, 0.0, 180.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {100000.0, 10000.0, 0.0,}, 1, {0, 0, 180.0,}, 0, 0, "r1",},
+	{1, "", "heavycruiser", {-100000.0, 0.0, 0.0,}, 1, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "resourcecollector", {100000.0, 20000.0, 0.0,}, 1, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-100000.0, -10000.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "heavycruiser", {100000.0, 0.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "resourcecollector", {-100000.0, -20000.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+}
+Crystals = {}
+
+Distributions =
+{
+	neb =
+	{
+		nebula0 = 0,
+		nebula1 = 5,
+		nebula2 = 3,
+		nebula3 = 2,
+		nebula4 = 10,
+	},
+}
+
+Resources =
+{
+	{{-60000.0, -60000.0, 0.0,}, "nebula", "neb", 300, 50000.0, 50000.0, 50000.0, 200000},
+	{{-50000.0, 50000.0, 50000.0,}, "nebula", "neb", 75, 50000.0, 50000.0, 50000.0, 100000},
+	{{-50000.0, 50000.0, -50000.0,}, "nebula", "neb", 75, 50000.0, 50000.0, 50000.0, 100000},
+	{{50000.0, -50000.0, -50000.0,}, "nebula", "neb", 75, 50000.0, 50000.0, 50000.0, 100000},
+	{{50000.0, -50000.0, 50000.0,}, "nebula", "neb", 75, 50000.0, 50000.0, 50000.0, 100000},
+	{{0.0, 0.0, 0.0,}, "nebula", "neb", 300, 50000.0, 50000.0, 50000.0, 200000},
+	{{-30000.0, -30000.0, 0.0,}, "nebula", "neb", 300, 50000.0, 50000.0, 50000.0, 200000},
+	{{30000.0, 30000.0, 0.0,}, "nebula", "neb", 300, 50000.0, 50000.0, 50000.0, 200000},
+	{{60000.0, 60000.0, 0.0,}, "nebula", "neb", 300, 50000.0, 50000.0, 50000.0, 200000},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

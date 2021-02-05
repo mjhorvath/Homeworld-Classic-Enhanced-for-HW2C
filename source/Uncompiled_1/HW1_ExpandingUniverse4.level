@@ -1,0 +1,115 @@
+-- Converted using HW2 Map Converter v0.85 by Mikail
+-- Expanding Universe
+-- This planet was experimenting with drawing energy directly from the core of their world. These experiments brought forth a disastorous planet-shattering explosion, which quickly turned a thriving civilization into dust. (oops) However, that's life, and now the remains of the planet make for great harvesting.
+-- AUTHOR	: AlStar (AlStar_@yahoo.com)
+-- VERSION	: 1.0
+
+LevelName = [[Expanding Universe (2-4)]]
+NumberOfPlayers = 4
+
+SensorsZoom = {50000, 120000,}
+UniverseSize = {190000, 190000, 180000, }
+
+LevelBackground = "ez12"
+LevelMusic = "27"
+
+RUsRatio = 2/5
+
+StartPoints =
+{
+	{-53057.2, 0.0, 0.0, 0.0,},
+	{56753.1, -684.1, 0.0, 180.0,},
+	{1076.9, -54676.8, 0.0, 90.0,},
+	{631.7, 54425.9, 0.0, -90.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {56753.1, -684.1, 0.0,}, 1, {0, 0, 180.0,}, 0, 0, "r2",},
+	{5, "", "lightcorvette", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "mothership", {-53057.2, 0.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1",},
+	{5, "", "lightcorvette", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {1076.9, -54676.8, 0.0,}, 2, {0, 0, 90.0,}, 0, 0, "r2",},
+	{5, "", "lightcorvette", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r2",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "researchship", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "mothership", {631.7, 54425.9, 0.0,}, 3, {0, 0, -90.0,}, 0, 0, "r1",},
+	{5, "", "lightcorvette", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "researchship", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+	{1, "", "heavycruiser", {-667.0, 0.0, 33484.0,}, -1, {0, 0, 0.0,}, 0, 0, "r1"},
+	{5, "", "junk_lgun", {-1293.2, 26109.5, 24765.9,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-1779.0, -24888.8, 24362.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{3, "", "junk_lgun", {-432.0, 34525.0, -95.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{3, "", "junk_lgun", {-1314.0, -33839.0, 162.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-1779.0, -25181.0, -23843.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-1779.0, 24031.2, -25214.9,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-25057.1, -23550.3, 162.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {22429.1, -23154.6, 162.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-24265.7, 24331.7, 162.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {22824.9, 23936.0, 162.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-920.6, 1731.9, 32997.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-1018.6, -1651.6, 32997.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-1018.6, 64.7, 34811.3,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-2019.0, 141.1, -33462.6,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{3, "", "junk_lgun", {-34229.0, 1639.2, -129.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{3, "", "junk_lgun", {33187.3, 2013.7, 620.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-26080.3, -195.6, 25145.9,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {23110.2, 196.4, 25145.9,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {24090.1, -1054.0, -25018.9,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-23924.5, 905.7, -25606.8,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {1431.2, -31.9, 32997.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-3272.3, 164.1, 32997.0,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+	{5, "", "junk_lgun", {-1018.6, 64.7, 30891.8,}, -1, {0, 0, 0.0,}, 0, 0, "traders"},
+}
+Crystals = {}
+
+Distributions =
+{
+	ring =
+	{
+		asteroid0 = 0,
+		asteroid1 = 2,
+		asteroid2 = 3,
+		asteroid3 = 4,
+		asteroid4 = 0,
+	},
+	pebble =
+	{
+		asteroid0 = 0,
+		asteroid1 = 0,
+		asteroid2 = 1,
+		asteroid3 = 2,
+		asteroid4 = 10,
+	},
+}
+
+Resources =
+{
+	{{1326.0, -1495.0, 0.0,}, "sphere", "ring", 60, 42520.0, 85040.0, 0.0, 0.0},
+	{{1825.0, 0.0, 0.0,}, "sphere", "ring", 60, 53235.0, 106470.0, 0.0, 0.0},
+	{{329.0, -997.0, 0.0,}, "sphere", "ring", 60, 75975.0, 151950.0, 0.0, 0.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 0.0, 0.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 0.0, 90.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 0.0, 45.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 0.0, -44.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 90.0, 180.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 46.0, 90.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 44.0, -90.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 48.0, 180.0},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 60, 6495.0, 64950.0, 43.0, 0.0},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

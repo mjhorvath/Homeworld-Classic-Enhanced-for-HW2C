@@ -1,0 +1,97 @@
+-- Converted using HW2 Map Converter v0.8.6 by Mikail
+-- OK Corral II 
+-- The ultimate team showdown at high noon. 
+-- AUTHOR	: Concept by Mazerguru map by Beltemall (dwillia552@aol.com)
+-- ADAPTED : BEAR vII up to 8 players
+-- VERSION	: 2 (6th Nov 2003)
+
+LevelName = [[OK Corral II 2-8 ]]
+NumberOfPlayers = 6
+
+SensorsZoom = {50000, 150000,}
+UniverseSize = {180000, 180000, 100000, }
+
+LevelBackground = "ez02"
+LevelMusic = "10"
+
+PebRatio = 7/8
+
+StartPoints =
+{
+	{0.0, 30000.0, 0.0, -90.0,},
+	{20000.0, 30000.0, 0.0, -90.0,},
+	{-20000.0, 30000.0, 0.0, -90.0,},
+	{0.0, -30000.0, 0.0, 90.0,},
+	{20000.0, -30000.0, 0.0, 90.0,},
+	{-20000.0, -30000.0, 0.0, 90.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {20000.0, 30000.0, 0.0,}, 1, {0, 0, -90.0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, 30000.0, 0.0,}, 0, {0, 0, -90.0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-20000.0, 30000.0, 0.0,}, 2, {0, 0, -90.0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, -30000.0, 0.0,}, 3, {0, 0, 90.0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {20000.0, -30000.0, 0.0,}, 4, {0, 0, 90.0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-20000.0, -30000.0, 0.0,}, 5, {0, 0, 90.0,}, 0, 0, "r1",},
+	{2, "", "resourcecollector", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r1",},
+	{5, "", "lightinterceptor", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+}
+
+Crystals =
+{
+}
+
+Distributions =
+{
+	asteroid =
+	{
+		asteroid0 = 0,
+		asteroid1 = 0,
+		asteroid2 = 3,
+		asteroid3 = 2,
+		asteroid4 = 5,
+	},
+	dust =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 0,
+		dustcloud2 = 1,
+		dustcloud3 = 4,
+	},
+}
+
+Resources =
+{
+	{{0.0, -60000.0, 0.0,}, "cylinder", "asteroid", 250, 12000.0, 100000.0, 0.0, 0.0,},
+	{{0.0, 60000.0, 0.0,}, "cylinder", "asteroid", 250, 12000.0, 100000.0, 0.0, 0.0,},
+	{{0.0, -60000.0, 0.0,}, "cylinder", "dust", 80, 12000.0, 100000.0, 0.0, 0.0,},
+	{{0.0, 60000.0, 0.0,}, "cylinder", "dust", 80, 12000.0, 100000.0, 0.0, 0.0,},
+	{{0.0, 0.0, 10000.0,}, "cylinder", "asteroid", 80, 3000.0, 120000.0, 0.0, 0.0,},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

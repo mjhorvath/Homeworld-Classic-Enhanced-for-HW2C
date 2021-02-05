@@ -1,0 +1,81 @@
+-- Converted using HW2 Map Converter v0.8.6 by Mikail
+-- Title says it all just have fun
+-- AUTHOR: me
+
+LevelName = [[Me Vs One (2)]]
+NumberOfPlayers = 2
+
+SensorsZoom = {5000, 1000000,}
+UniverseSize = {1000000, 1000000, 500000, }
+
+LevelBackground = "ez05"
+LevelMusic = "24"
+
+StartPoints =
+{
+	{-40000.0, 0.0, 0.0, 0.0,},
+	{40000.0, 0.0, 0.0, 180.0,},
+}
+
+PebRatio = 7/8
+
+StartShips =
+{
+	{1, "", "mothership", {40000.0, 0.0, 0.0,}, 1, {0, 0, 180.0,}, 0, 0, "r1",},
+	{2, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-40000.0, 0.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1",},
+	{2, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+}
+
+Crystals =
+{
+}
+
+Distributions =
+{
+	dust =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 8,
+		dustcloud2 = 2,
+		dustcloud3 = 0,
+	},
+	rock =
+	{
+		asteroid0 = 0,
+		asteroid1 = 1,
+		asteroid2 = 7,
+		asteroid3 = 4,
+		asteroid4 = 0,
+	},
+	pebble =
+	{
+		asteroid0 = 0,
+		asteroid1 = 1,
+		asteroid2 = 5,
+		asteroid3 = 1,
+		asteroid4 = 0,
+	},
+}
+
+Resources =
+{
+	{{0.0, -20.0, 0.0,}, "cylinder", "dust", 20, 1500.0, 30000.0, 0.0, 0.0,},
+	{{0.0, 0.0, 0.0,}, "cylinder", "rock", 80, 1500.0, 30000.0, 0.0, 0.0,},
+	{{35000.0, -7000.0, 0.0,}, "sphere", "pebble", 20, 1500.0, 3000.0, 0.0, 0.0,},
+	{{-35000.0, 7000.0, 0.0,}, "sphere", "pebble", 20, 1500.0, 3000.0, 0.0, 0.0,},
+	{{35000.0, -7000.0, 0.0,}, "sphere", "dust", 5, 1600.0, 3200.0, 0.0, 0.0,},
+	{{-35000.0, 7000.0, 0.0,}, "sphere", "dust", 5, 1600.0, 3200.0, 0.0, 0.0,},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

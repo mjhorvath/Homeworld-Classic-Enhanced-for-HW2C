@@ -1,0 +1,91 @@
+-- Converted using HW2 Map Converter v0.85 by Mikail
+-- Follow the line of DustClouds to the middle clump of Asteriods that 
+-- is Gaurded by a Megaship.  Sieze control of these everlasting Resources to win!
+-- Settings: default.
+-- Author: Tycho
+-- E-Mial: jridley@spiritone.com
+
+LevelName = [[X (2-4)]]
+NumberOfPlayers = 4
+
+SensorsZoom = {40000, 160000,}
+UniverseSize = {950000, 950000, 450000, }
+
+LevelBackground = "ez03"
+LevelMusic = "1"
+
+PebRatio = 4/5
+
+StartPoints =
+{
+	{67000.0, 0.0, 67000.0, -128.0,},
+	{-67000, 0, 67000, -46.0,},
+	{67000.0, 0.0, -67000.0, -128.0,},
+	{-67000.0, 0.0, -67000.0, -128.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {67000.0, 0.0, 67000.0,}, 0, {0, 0, -128.0,}, 0, 0, "r1",},
+	{1, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{15, "", "p2advanceswarmer", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "p2",},
+	{1, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "p3frigate", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "p3",},
+	{2, "", "p1ionarrayfrigate", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "p1",},
+	{1, "", "mothership", {-67000, 0, 67000,}, 1, {0, 0, -46.0,}, 0, 0, "r2",},
+	{1, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{15, "", "p2advanceswarmer", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "p2",},
+	{1, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r2",},
+	{1, "", "p3frigate", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "p3",},
+	{2, "", "p1ionarrayfrigate", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "p1",},
+	{1, "", "mothership", {67000.0, 0.0, -67000.0,}, 2, {0, 0, -128.0,}, 0, 0, "r1",},
+	{1, "", "resourcecollector", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{15, "", "p2advanceswarmer", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "p2",},
+	{1, "", "researchship", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "p3frigate", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "p3",},
+	{2, "", "p1ionarrayfrigate", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "p1",},
+	{1, "", "mothership", {-67000.0, 0.0, -67000.0,}, 3, {0, 0, -128.0,}, 0, 0, "r1",},
+	{1, "", "resourcecollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{15, "", "p2advanceswarmer", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "p2",},
+	{1, "", "researchship", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "p3frigate", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "p3",},
+	{2, "", "p1ionarrayfrigate", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "p1",},
+}
+
+Squadrons =
+{
+	{1, "", "p3megaship", {0.0, 0.0, 0.0,}, -1, {0, 0, 0.0,}, 0, 0, "p3"},
+}
+Crystals = {}
+
+Distributions =
+{
+	bigdustcloud =
+	{
+		dustcloud0 = 5,
+		dustcloud1 = 10,
+		dustcloud2 = 20,
+		dustcloud3 = 10,
+	},
+	bigasteriod =
+	{
+		asteroid0 = 10,
+		asteroid1 = 20,
+		asteroid2 = 10,
+		asteroid3 = 20,
+		asteroid4 = 20,
+	},
+}
+
+Resources =
+{
+	{{0, 0, 0,}, "cylinder", "bigdustcloud", 150, 2000, 190000, -135, 0},
+	{{0, 0, 0,}, "cylinder", "bigdustcloud", 150, 2000, 190000, -45, 0},
+	{{0, 0, 0,}, "sphere", "bigasteriod", 60, 4000, 8000, 0, 0},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

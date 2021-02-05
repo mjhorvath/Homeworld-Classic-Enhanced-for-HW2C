@@ -1,0 +1,70 @@
+-- Converted using HW2 Map Converter v0.85 by Mikail
+-- Space Void
+-- This map is designed for quick games. If you are smart enough you can emerge as the victor. Good for ffa or team games.
+-- Hope you enjoy.
+-- AUTHOR	: medamanx
+-- E-MAIL	: medamanx@hotmail.com
+
+LevelName = [[Space Void (2-6)]]
+NumberOfPlayers = 6
+
+SensorsZoom = {10000, 100000,}
+UniverseSize = {100000, 100000, 100000, }
+
+LevelBackground = "ionsphere2_btg"
+LevelMusic = "-1"
+
+PebRatio = 4/5
+
+StartPoints =
+{
+	{-67698.0, 0.0, 0.0, 0.0,},
+	{67698.0, 0.0, 0.0, 180.0,},
+	{0.0, -67698.0, 0.0, 90.0,},
+	{0.0, 67698.0, 0.0, -90.0,},
+	{0.0, 0.0, -67698.0, 0.0,},
+	{0.0, 0.0, 67698.0, 0.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {67698.0, 0.0, 0.0,}, 1, {0, 0, 180.0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-67698.0, 0.0, 0.0,}, 0, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, -67698.0, 0.0,}, 2, {0, 0, 90.0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, 67698.0, 0.0,}, 3, {0, 0, -90.0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, 0.0, -67698.0,}, 4, {0, 0, 0.0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, 0.0, 67698.0,}, 5, {0, 0, 0.0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+}
+Crystals = {}
+
+Distributions =
+{
+	dustspot =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 2,
+		dustcloud2 = 3,
+		dustcloud3 = 4,
+	},
+}
+
+Resources =
+{
+	{{0.0, 60000.0, 0.0,}, "sphere", "dustspot", 50, 5000.0, 10000.0, 0.0, 0.0},
+	{{60000.0, 0.0, 0.0,}, "sphere", "dustspot", 50, 5000.0, 10000.0, 0.0, 0.0},
+	{{0.0, 0.0, 0.0,}, "sphere", "dustspot", 50, 5000.0, 10000.0, 0.0, 0.0},
+	{{-60000.0, 0.0, 0.0,}, "sphere", "dustspot", 50, 5000.0, 10000.0, 0.0, 0.0},
+	{{0.0, -60000.0, 0.0,}, "sphere", "dustspot", 50, 5000.0, 10000.0, 0.0, 0.0},
+	{{0.0, 0.0, -60000.0,}, "sphere", "dustspot", 50, 5000.0, 10000.0, 0.0, 0.0},
+	{{0.0, 0.0, 60000.0,}, "sphere", "dustspot", 50, 5000.0, 10000.0, 0.0, 0.0},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

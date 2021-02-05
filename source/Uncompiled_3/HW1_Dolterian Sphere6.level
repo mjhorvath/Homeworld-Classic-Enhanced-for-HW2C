@@ -1,0 +1,92 @@
+-- Converted using HW2 Map Converter v0.8.6 by Mikail
+-- Dolterian Sphere
+-- enjoy
+-- AUTHOR: &Lagsy
+-- Email  LagsFF@aol.com
+
+LevelName = [[Dolterian Sphere (2-8)]]
+NumberOfPlayers = 6
+
+SensorsZoom = {20000, 200000,}
+UniverseSize = {100000, 100000, 50000, }
+
+LevelBackground = "ez06"
+LevelMusic = "23"
+
+RUsRatio = 1/2
+PebRatio = 7/8
+
+StartPoints =
+{
+	{-10000.0, -15000.0, 0.0, 90.0,},
+	{10000.0, -15000.0, 0.0, 90.0,},
+	{0.0, -50000.0, 0.0, 90.0,},
+	{0.0, 50000.0, 0.0, -90.0,},
+	{10000.0, 15000.0, 0.0, -90.0,},
+	{-10000.0, 15000.0, 0.0, -90.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {10000.0, -15000.0, 0.0,}, 1, {0, 0, 90.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-10000.0, -15000.0, 0.0,}, 0, {0, 0, 90.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, -50000.0, 0.0,}, 2, {0, 0, 90.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {0.0, 50000.0, 0.0,}, 3, {0, 0, -90.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {10000.0, 15000.0, 0.0,}, 4, {0, 0, -90.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 4, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-10000.0, 15000.0, 0.0,}, 5, {0, 0, -90.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 5, {0, 0, 0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+}
+
+Crystals =
+{
+}
+
+Distributions =
+{
+	cyl =
+	{
+		asteroid0 = 10,
+		asteroid1 = 0,
+		asteroid2 = 0,
+		asteroid3 = 20,
+		asteroid4 = 20,
+	},
+	dustball =
+	{
+		dustcloud0 = 8,
+		dustcloud1 = 8,
+		dustcloud2 = 4,
+		dustcloud3 = 2,
+	},
+}
+
+Resources =
+{
+	{{0.0, -60000.0, 0.0,}, "sphere", "cyl", 400, 30000.0, 60000.0, 0.0, 0.0,},
+	{{0.0, -60000.0, 0.0,}, "sphere", "dustball", 150, 25000.0, 50000.0, 0.0, 0.0,},
+	{{0.0, 0.0, 0.0,}, "sphere", "dustball", 150, 25000.0, 50000.0, 0.0, 0.0,},
+	{{0.0, 0.0, 0.0,}, "sphere", "cyl", 400, 30000.0, 60000.0, 0.0, 0.0,},
+	{{0.0, 60000.0, 0.0,}, "sphere", "cyl", 400, 30000.0, 60000.0, 0.0, 0.0,},
+	{{0.0, 60000.0, 0.0,}, "sphere", "dustball", 150, 25000.0, 50000.0, 0.0, 0.0,},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+

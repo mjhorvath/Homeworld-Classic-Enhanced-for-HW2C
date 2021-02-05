@@ -1,0 +1,95 @@
+-- Converted using HW2 Map Converter v0.8.6 by Mikail
+-- The 2 vs 2 Map
+-- Here teamwork is needed with your ally work together to
+-- destroy the other team.
+-- AUTHOR: &Lagsy
+-- Email  LagsFF@aol.com
+
+LevelName = [[The 2 vs 2 Map (4)]]
+NumberOfPlayers = 4
+
+SensorsZoom = {20000, 200000,}
+UniverseSize = {100000, 100000, 50000, }
+
+LevelBackground = "ez06"
+LevelMusic = "41"
+
+PebRatio = 4/5
+
+StartPoints =
+{
+	{35000.0, 15000.0, 0.0, -180.0,},
+	{35000.0, -15000.0, 0.0, -180.0,},
+	{-35000.0, -15000.0, 0.0, 0.0,},
+	{-35000.0, 15000.0, 0.0, 0.0,},
+}
+
+StartShips =
+{
+	{1, "", "mothership", {35000.0, -15000.0, 0.0,}, 1, {0, 0, -180.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{8, "", "heavyinterceptor", {0, 0, 0,}, 1, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {35000.0, 15000.0, 0.0,}, 0, {0, 0, -180.0,}, 0, 0, "r1",},
+	{6, "", "heavydefender", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 0, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-35000.0, -15000.0, 0.0,}, 2, {0, 0, 0.0,}, 0, 0, "r1",},
+	{4, "", "researchship", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{8, "", "heavyinterceptor", {0, 0, 0,}, 2, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "mothership", {-35000.0, 15000.0, 0.0,}, 3, {0, 0, 0.0,}, 0, 0, "r1",},
+	{6, "", "heavydefender", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{4, "", "resourcecollector", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+	{1, "", "resourcecontroller", {0, 0, 0,}, 3, {0, 0, 0,}, 0, 0, "r1",},
+}
+
+Squadrons =
+{
+}
+
+Crystals =
+{
+}
+
+Distributions =
+{
+	rock =
+	{
+		asteroid0 = 0,
+		asteroid1 = 0,
+		asteroid2 = 2,
+		asteroid3 = 4,
+		asteroid4 = 1,
+	},
+	dust =
+	{
+		dustcloud0 = 0,
+		dustcloud1 = 4,
+		dustcloud2 = 2,
+		dustcloud3 = 1,
+	},
+	pebble =
+	{
+		asteroid0 = 0,
+		asteroid1 = 0,
+		asteroid2 = 1,
+		asteroid3 = 2,
+		asteroid4 = 3,
+	},
+}
+
+Resources =
+{
+	{{35000.0, 0.0, 0.0,}, "cylinder", "rock", 30, 2500.0, 15000.0, 90.0, 180.0,},
+	{{-35000.0, 0.0, 0.0,}, "cylinder", "rock", 30, 2500.0, 15000.0, 90.0, 180.0,},
+	{{35000.0, 0.0, 0.0,}, "cylinder", "dust", 20, 1500.0, 15000.0, 90.0, 180.0,},
+	{{-35000.0, 0.0, 0.0,}, "cylinder", "dust", 20, 1500.0, 15000.0, 90.0, 180.0,},
+	{{0.0, 0.0, -10000.0,}, "cylinder", "pebble", 40, 500.0, 50000.0, 0.0, -90.0,},
+	{{0.0, 0.0, 10000.0,}, "cylinder", "pebble", 40, 500.0, 50000.0, 0.0, -90.0,},
+	{{0.0, 0.0, 0.0,}, "cylinder", "pebble", 40, 2000.0, 50000.0, 20.0, 90.0,},
+}
+
+--------------------------------------------------------------------------------
+-- Map-Processing Functions
+
+dofilepath("data:scripts/levelfunc.lua")
+
